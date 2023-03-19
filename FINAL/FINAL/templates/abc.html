@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLAU Chatbot</title>
+    
+    <link rel="shortcut icon" href="{{url_for('static', filename='title_logo.png')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<center>
+<body>
+    <!-- GLA portal -->
+    <div class="container">
+        <nav class="navbar">
+            <a class="logo" href="{{url_for('static', filename='index.html')}}"><img src="{{url_for('static', filename='title_logo.png')}}" alt="Home" width="65" height="60"></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="admin_login.html">Admin Login</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <div class="text">
+            <h1>Welcome To GLAU Portal</h1>
+            <img src="{{url_for('static', filename='title_logo.png')}}" class="main_logo" width="250" height="250">
+            </div>
+        </section>
+    </div>
+    <div class="container1">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Chat support</h4>
+                        <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="{{url_for('static', filename='chat_logo.png'")}}/></button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="{{url_for('static', filename='app.js')}}"></script>
+</center>
+</html>
